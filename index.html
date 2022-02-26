@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style/style.css">
+  <title>Clock Converter App</title>
+</head>
+
+<body>
+  <h1>Clock Converter App</h1>
+  
+  <div class="form-wrapper">
+    <p>Convert clock 24 Hour Format to 12 Hour AM/PM Format</p>
+    <input placeholder="e.g. 19.30" id="hourA">
+    <button id="convertA">Convert</button>
+    <p>Result : <span id="resultA">7.30 PM</span></p>
+  </div>
+
+  <div class="form-wrapper">
+    <p>Convert clock 12 Hour AM/PM Format to 24 Hour Format</p>
+    <input placeholder="e.g. 8.45" id="hourB">
+    <select name="unit" id="unit">
+      <option value="am">AM</option>
+      <option value="pm">PM</option>
+    </select>
+    <button id="convertB">Convert</button>
+    <p>Result : <span id="resultB">08.45</span></p>
+  </div>
+
+  <script src="src/script/convert.js"></script>
+</body>
+
+</html>
